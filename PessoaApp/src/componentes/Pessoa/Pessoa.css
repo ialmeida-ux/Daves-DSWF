@@ -1,0 +1,11 @@
+
+.card1{
+    border: "1px solid black";
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: left    ;
+    width: 250px;
+    height: 200px;
+    background-color: #2eea41 !important;
+}
