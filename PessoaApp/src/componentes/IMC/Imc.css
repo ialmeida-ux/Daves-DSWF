@@ -1,0 +1,18 @@
+.containerIMC{
+    border: "1px solid black";
+    border-radius: 10px;
+    /* padding: 10px; */
+    margin: 10px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    background-color: #969493;
+}
+
+.tituloIMC{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #d74c06;
+    padding: 10px;
+
+}

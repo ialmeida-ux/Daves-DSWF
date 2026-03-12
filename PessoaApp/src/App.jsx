@@ -1,4 +1,5 @@
 import './App.css'
+import Imc from './componentes/IMC/Imc'
 import Pessoa from './componentes/Pessoa/Pessoa'
 
 function App() {
@@ -6,6 +7,9 @@ function App() {
 
   return (
     <>
+
+    <Imc titulo="Calculadora de IMC"/>
+
     <Pessoa nome="zezin da Silva" 
       idade="18" sexo="M" 
       cor="red" 
