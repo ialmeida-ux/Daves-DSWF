@@ -2,7 +2,7 @@ import { useState } from "react"
 import "./Portifolio.css"
 import Card from "../Card/Card"
 
-const Portifolio = ( {titulo} )=>{
+const Portifolio = ( {titulo, children} )=>{
 
     const [tema, setTema] = useState("claro")
 
@@ -23,9 +23,7 @@ const Portifolio = ( {titulo} )=>{
 
             <div className="corpoPortifolio">
 
-                <Card titulo="Exemplo 01" />
-                <Card titulo="Exemplo 02" />
-                <Card titulo="Exemplo 03" />
+                {children}
                 
             </div>
 

@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './Card.css';
+import { Children } from 'react';
 
-const Card = ( {titulo} )=>{
+const Card = ( {titulo, children} )=>{
 
     // const [setas, setSetas] = useState("▼")
     //▲▼
@@ -21,7 +22,8 @@ const Card = ( {titulo} )=>{
 
             <div className={`cardCorpo ${aberto ? 'cardCorpoOpen' : 'cardCorpoClose'}`} >
 
-                teste
+                {children}
+                
             </div>
         
         </div>  
