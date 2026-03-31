@@ -4,7 +4,7 @@ const ParImpar = ({ numero, usuario })=>{
 
 
     return(
-        <>
+        <div>
         {(numero % 2 === 0) ? "Par" : "Impar" }
         <br />
          Olá {usuario.nome}
@@ -14,7 +14,7 @@ const ParImpar = ({ numero, usuario })=>{
         {usuario.idade > 17 &&
             <span> você é maior de Idade</span>
         }
-        </>
+        </div>
     )
 
 }

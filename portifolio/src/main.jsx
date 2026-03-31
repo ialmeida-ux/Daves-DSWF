@@ -50,6 +50,7 @@ createRoot(document.getElementById('root')).render(
 
       <Card titulo="Desafio 07 - Condicionais">
         <ParImpar numero={58} usuario={{nome: "zezin", idade: 18}} />
+        <ParImpar numero={55} usuario={{nome: "pedrin", idade: 15}} />
       </Card>
 
     </Portifolio>
