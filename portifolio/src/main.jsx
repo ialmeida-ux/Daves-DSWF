@@ -12,11 +12,13 @@ import Familia from './Desafios/Desafio06/Familia'
 import FamiliaMembro from './Desafios/Desafio06/FamiliaMembro'
 import ParImpar from './Desafios/Desafio07/ParImpar'
 import Pesquisa from './Desafios/Desafio08/Pesquisa'
+import Effect from './Desafios/Desafio09/Effect'
+import Menu from './Desafios/Desafio10/Menu'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    
+    {/* <Menu /> */}
     <Portifolio titulo="Conceitos de React">
       
       <Card titulo="Desafio 01 - Passagem de paramêtro" >
@@ -54,8 +56,17 @@ createRoot(document.getElementById('root')).render(
         <ParImpar numero={55} usuario={{nome: "pedrin", idade: 15}} />
       </Card>
 
-      <Card titulo="Desafio 08 - Comunicação Indireta - UseState">
-        <Pesquisa titulo="Pesquisa de Produtos" />
+
+      <Card titulo="Desafio 08 - Comunicação indireta">
+        <Pesquisa />
+      </Card>
+
+      <Card titulo="Desafio 09 - UseEffect">
+        <Effect />
+      </Card>
+
+      <Card titulo="Desafio 10 - Menu">
+        <Menu />
       </Card>
 
     </Portifolio>
