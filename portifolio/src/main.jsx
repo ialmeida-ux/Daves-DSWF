@@ -1,75 +1,30 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Portifolio from './Componentes/Portifolio/Portifolio'
 // import './index.css'
 import "./main.css"
-import Card from './Componentes/Card/Card'
-import MensagemSimples from './Desafios/Desafio01/MensagemSimples'
-import SituacaoAluno from './Desafios/Desafio02/SituacaoAluno'
-import Aleatorio from './Desafios/Desafio03/Aleatorio'
-import ListaAlunos from './Desafios/Desafio05/ListaAlunos'
-import Familia from './Desafios/Desafio06/Familia'
-import FamiliaMembro from './Desafios/Desafio06/FamiliaMembro'
-import ParImpar from './Desafios/Desafio07/ParImpar'
-import Pesquisa from './Desafios/Desafio08/Pesquisa'
-import Effect from './Desafios/Desafio09/Effect'
-import Menu from './Desafios/Desafio10/Menu'
+import MenuTopo from './Componentes/MenuTopo/MenuTopo'
+import { BrowserRouter, Route, Routes } from 'react-router'
+import HomePage from './Views/Home/HomePage'
+import LoginPage from './Views/Login/LoginPage'
+import SobrePage from './Views/Sobre/SobrePage'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <Menu /> */}
-    <Portifolio titulo="Conceitos de React">
-      
-      <Card titulo="Desafio 01 - Passagem de paramêtro" >
-        
-        <MensagemSimples mensagem="Seja Bem Vindo!" />
+    
+    <BrowserRouter>    
+        <MenuTopo />
 
-      </Card>
+        <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/login' element={<LoginPage />} />
+            <Route path='/sobre' element={<SobrePage />} />
 
-      <Card titulo="Desafio 02 - CSS e If" >
-
-        <SituacaoAluno nome="Zezin da Silva" nota={2.8} />
-
-      </Card>
-
-      <Card titulo="Desafio 03 - Cálculo Aleatório">
-        <Aleatorio min={50} max={60} />
-      </Card>
-
-      <Card titulo="Desafio 05 - Lista de Alunos - Repetição">
-        <ListaAlunos />
-      </Card>
+        </Routes>
 
 
-      <Card titulo="Desafio 06 - Filhos - passagem de conteúdo">
-        <Familia sobrenome="Martins" >
-          <FamiliaMembro nome="Zezin" />
-          <FamiliaMembro nome="Pedrin" />
-          <FamiliaMembro nome="Bia" />
-        </Familia>
-      </Card>
-
-
-      <Card titulo="Desafio 07 - Condicionais">
-        <ParImpar numero={58} usuario={{nome: "zezin", idade: 18}} />
-        <ParImpar numero={55} usuario={{nome: "pedrin", idade: 15}} />
-      </Card>
-
-
-      <Card titulo="Desafio 08 - Comunicação indireta">
-        <Pesquisa />
-      </Card>
-
-      <Card titulo="Desafio 09 - UseEffect">
-        <Effect />
-      </Card>
-
-      <Card titulo="Desafio 10 - Menu">
-        <Menu />
-      </Card>
-
-    </Portifolio>
+    </BrowserRouter>
+    
 
   </StrictMode>,
 )

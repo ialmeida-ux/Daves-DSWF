@@ -1,0 +1,19 @@
+
+.menuTopo{
+    background-color: RGB(0,0,0,0.5);
+}
+
+.menuTopo ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px;
+}
+
+.menuTopo ul li{
+  padding: 0px 30px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
